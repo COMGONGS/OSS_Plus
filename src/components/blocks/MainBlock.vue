@@ -1,17 +1,16 @@
 <template>
     <div class="main-block">
-        
-    </div>
+</div>
 </template>
 
 <script>
-import AppContainer from "@/components/components/AppContainer.vue";
+// import AppContainer from "@/components/components/AppContainer.vue";
 
 export default {
     name: 'MainBlock',
 
     components: {
-        AppContainer,
+        //AppContainer,
     },
 
 }

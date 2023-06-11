@@ -8,19 +8,20 @@
     -->
     <div class="main_contents">
         <div class="SearchBox">
-            <input type="text" placeholder="검색어 입력">
+            <input type="text"
+placeholder="검색어 입력">
         </div>
     </div>
 </template>
 
 <script>
-import AppContainer from "@/components/components/AppContainer.vue";
+//import AppContainer from "@/components/components/AppContainer.vue";
 
 export default {
     name: 'WorkBlock',
 
     components: {
-        AppContainer,
+        //AppContainer,
     },
 
     data() {

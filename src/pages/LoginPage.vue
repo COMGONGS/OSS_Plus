@@ -8,28 +8,32 @@
            v-model="password"
            placeholder="password"><br>
     <button v-on:click="login">로그인</button>
-    <p>만약 계정이 없다면, <router-link to="/signup">회원가입</router-link>을 먼저 진행해주세요!</p>
+    <p v-if="userEmail">Logged in as: {{ userEmail }}</p>
+    <p v-else>만약 계정이 없다면, <router-link to="/signup">회원가입</router-link>을 먼저 진행해주세요!</p>
   </div>
 </template>
 
 <script>
-import firebase from 'firebase'
+import firebase from 'firebase/app';
+import 'firebase/auth';
 
 export default {
   name: 'LoginPage',
   data() {
     return {
       email: '',
-      password: ''
+      password: '',
+      userEmail: ''
     }
   },
   methods: {
     login() {
       firebase.auth().signInWithEmailAndPassword(this.email, this.password).then(
-          function(user) {
+          (user) => {
+            this.userEmail = user.user.email;
             alert('로그인 완료!')
           },
-          function(err) {
+          (err) => {
             alert('에러 : ' + err.message)
           }
       );

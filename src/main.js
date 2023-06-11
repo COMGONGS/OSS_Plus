@@ -5,7 +5,6 @@ import store from './store'
 import BootstrapVue from "bootstrap-vue";
 import { initializeApp } from "firebase/app";
 
-
 import gsap from 'gsap'
 
 import './assets/style/main.scss';
@@ -36,4 +35,4 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+initializeApp(firebaseConfig);

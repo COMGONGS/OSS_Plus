@@ -11,14 +11,12 @@
                     <div class="footer__social _youtube"></div>
                 </div>
             </div>
-            
-        </app-container>
+</app-container>
     </div>
 </template>
 
 <script>
-import AppContainer from './components/AppContainer.vue';
-
+import AppContainer from '@/components/components/AppContainer.vue';
 export default {
     name: 'TheFooter',
 

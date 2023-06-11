@@ -13,7 +13,8 @@
 </template>
 
 <script>
-import firebase from "firebase";
+import firebase from 'firebase/app';
+import 'firebase/auth';
 export default {
   name: 'SignUp',
   data() {
@@ -26,7 +27,7 @@ export default {
     signUp() {
       firebase.auth().createUserWithEmailAndPassword(this.email, this.password).then(
           function(user) {
-            alert('회원가입 완료!')
+            alert('회원가입 완료! 사용자 정보: ' + JSON.stringify(user.user.email))
           },
           function(err) {
             alert('에러 : ' + err.message)
