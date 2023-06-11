@@ -1,18 +1,18 @@
 <template>
-  <div class="beforecounsulting">
-    <BannerPage title="BeforeCounsulting"/>
+  <div class="registercounselor-page">
+    <BannerPage title="상담사 등록하기"/>
     <div class="maincontents">
       <!--이 부분에 상담사 목록 나열 table 추가 하기-->
-      내용추가
+      내용 추가
     </div>
   </div>
 </template>
 
 <script>
-import BannerPage from '@/components/blocks/BannerPage.vue';
+import BannerPage from "@/components/blocks/BannerPage.vue";
 
 export default {
-  name: 'BeforeCounsultingPage',
+  name: 'RegisterCounselorPage"',
 
   components: {
     BannerPage
@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style lang='scss'>
-  .beforecounsulting {
+  .registercounselor-page {
     margin-top: 50px;
   }
 

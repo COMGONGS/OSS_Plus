@@ -20,4 +20,6 @@ export default {
 .login {
     margin-top: 50px;
 }
+
+
 </style>
