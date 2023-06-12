@@ -5,14 +5,14 @@
         </div>
         <div class="search-keyword">
             <div class="keyword-title">
-                <p>키워드로 찾기</p>
+                <h2 class="sub-keytitle">키워드로 찾기</h2>
             </div>
         </div>
         <div class="support-wrap">
             <div class="support">
                 <ul class="support-list">
                     <li class="small-title">
-                        <h3 class="sub-title">이용자 지원</h3>
+                        <h3 class="sub-suptitle">이용자 지원</h3>
                     </li>
                     <li class="notice">
                         공지사항
@@ -23,7 +23,8 @@
                 </ul>
             </div>
         </div>
-        <hr/>
+        <div class="line">
+        </div>
     </div>
 </template>
 
@@ -54,6 +55,8 @@ export default {
 }
 
 .search-keyword {
+    display: flex;
+    justify-content: center;
     margin-top: 150px;
     height: 400px;
     width: 100%;
@@ -62,6 +65,11 @@ export default {
 
 .keyword-title {
     margin-bottom: 0;
+}
+
+
+.sub-keytitle {
+    margin-top: 40px;
 }
 
 .support-wrap {
@@ -115,8 +123,9 @@ export default {
     list-style: none;
   }
 
-.hr {
+.line {
     width: 100%;
     height: 10px;
+    background-color: teal;
 }
 </style>
