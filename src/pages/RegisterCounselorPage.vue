@@ -4,66 +4,90 @@
     <div class="maincontents">
       <!--이 부분에 상담사 목록 나열 table 추가 하기-->
       <div class="register-area">
-        <form action="">
-          <div>
-            <label for="name">
-              <p>이름</p>
-            </label>
-            <input id="name" type="text" placeholder="Name & Press Enter">
+        <div class="form-title">
+          <h1>상담사 정보 입력</h1>
+        </div>
+        <form action=""
+        class="form-style">
+          <div class="input-name">
+            <input id="name" 
+            type="text" 
+            placeholder=" 이름">
           </div>
-          <div>
-            <label for="age">
-              <p>만 나이</p>
-            </label>
-            <input id="age" type="number">
+          <div class="input-age">
+            <input id="age" 
+            type="number" 
+            placeholder=" 만 나이">
           </div>
-          <div>
-            <p>성별</p>
-            <input name="gender" id="female" type="radio">여성
-            <input name="gender" id="male" type="radio">남성
+          <div class="input-gender">
+            <p id="gender-tile">성별</p>
+            <input name="gender" 
+            id="female" 
+            type="radio">여성
+            <input name="gender" 
+            id="male" 
+            type="radio">남성
           </div>
-          <div>
-            <label for="no">
-              <p>자격증 발급 번호</p>
-            </label>
-            <input id="no" type="text">
+          <div class="input-no">
+            <input id="no" 
+            type="text"
+            placeholder=" 자격증 발급 번호">
           </div>
-          <div>
+          <div class="input-img">
             <label for="profile-img">
               <p>프로필 사진 등록</p>
             </label>
-            <input id="profile-img" type="file">
+            <input id="profile-img" 
+            type="file">
           </div>
-          <input type="text" v-model="postcode" placeholder="우편번호">
-          <input type="button" @click="execDaumPostcode()" value="우편번호 찾기"><br>
-          <input type="text" id="address" placeholder="주소"><br>
-          <input type="text" id="detailAddress" placeholder="상세주소">
-          <input type="text" id="extraAddress" placeholder="참고항목">
-          <div>
-            <label for="intro">
-              <p>자기소개</p>
-            </label>
-            <input id="intro" type="text" placeholder="자기소개 작성">
+          <div class="input-address">
+            <input type="text" 
+            v-model="postcode" 
+            placeholder=" 우편번호">
+            <input type="button" 
+            @click="execDaumPostcode()" 
+            value=" 우편번호 찾기"><br>
+            <input type="text" 
+            id="address" 
+            placeholder=" 주소"><br>
+            <input type="text" 
+            id="detailAddress" 
+            placeholder=" 상세주소">
+            <input type="text" 
+            id="extraAddress" 
+            placeholder=" 참고항목">
           </div>
-          <div>
+          <div class="input-intro">
+            <textarea id="intro" 
+            type="text" 
+            placeholder=" 자기소개 작성">
+            </textarea>
+          </div>
+          <div class="input-keyword">
             <label for="keyword">
               <p>키워드 선택</p>
             </label>
-            <input id="keyword1" type="checkbox">
+            <input id="keyword1" 
+            type="checkbox">
             <label for="keyword1">
               <p>우울증</p>
             </label>
-            <input id="keyword2" type="checkbox">
-            <label for="keyword2">
+            <input id="keyword2" 
+            type="checkbox">
+            <label for="keyword2  ">
               <p>트라우마</p>
             </label>
-            <input id="keyword3" type="checkbox">
+            <input id="keyword3" 
+            type="checkbox">
             <label for="keyword3">
               <p>조울증</p>
             </label>
           </div>
           <br>
-          <input type="submit" value="Submit">
+          <div class="submit-button">
+            <input type="submit" 
+            value="Submit">
+          </div>
         </form>
       </div>
     </div>
@@ -139,7 +163,7 @@ export default {
 
 .maincontents {
   display: flex;
-  height: 1000px;
+  height: 1200px;
   justify-content: center;
   background-color: gray;
   background-repeat: no-repeat;
@@ -147,10 +171,94 @@ export default {
 }
 
 .register-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 100px;
   margin-bottom: 100px;
   background-color: teal;
-  width: 40%;
-  height: 800px;
+  width: 45%;
+  height: 1000px;
+}
+
+.form-title {
+
+}
+
+.form-style {
+  width: 60%;
+}
+
+.input-name {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#name {
+  width: 100%;
+  height: 60px;
+}
+
+.input-age {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#age {
+  width: 100%;
+  height: 60px;
+}
+
+.input-gender {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-no {
+
+}
+
+#no {
+  width: 100%;
+  height: 60px;
+}
+
+.input-img {
+  margin-top: 40px;
+}
+
+.input-address {
+  margin-top: 40px;
+}
+
+.input-intro {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#intro {
+  width: 100%;
+  height: 150px;
+  word-break: break-all;
+  resize: none;
+}
+
+.input-keyword {
+  margin-top: 40px;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
