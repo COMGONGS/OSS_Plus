@@ -67,10 +67,12 @@ export default {
         justify-content: space-between;
         align-items: center;
         height: 120px;
+        width: 70%;
 
         &__logo {
-            width: 40px;
+            width: 50px;
             height: 50px;
+            margin-right: 50px;
             background: url("./../assets/images/logo.png");
             background-repeat: no-repeat;
             background-size: cover;

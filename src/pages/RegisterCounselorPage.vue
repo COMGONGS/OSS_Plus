@@ -85,11 +85,14 @@
           </div>
           <br>
           <div class="submit-button">
-            <input type="submit" 
-            value="Submit">
+            <input id="submit-bt"
+            type="submit" 
+            value="등록하기">
           </div>
         </form>
       </div>
+    </div>
+    <div class="line">
     </div>
   </div>
 </template>
@@ -163,9 +166,8 @@ export default {
 
 .maincontents {
   display: flex;
-  height: 1200px;
+  height: 1300px;
   justify-content: center;
-  background-color: gray;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -179,11 +181,12 @@ export default {
   margin-bottom: 100px;
   background-color: teal;
   width: 45%;
-  height: 1000px;
+  height: 1100px;
+  border-radius: 50px;
 }
 
 .form-title {
-
+  margin-top: 50px;
 }
 
 .form-style {
@@ -200,6 +203,8 @@ export default {
 #name {
   width: 100%;
   height: 60px;
+  border-radius: 10px;
+  border-width: 0;
 }
 
 .input-age {
@@ -212,6 +217,8 @@ export default {
 #age {
   width: 100%;
   height: 60px;
+  border-radius: 10px;
+  border-width: 0;
 }
 
 .input-gender {
@@ -228,6 +235,8 @@ export default {
 #no {
   width: 100%;
   height: 60px;
+  border-radius: 10px;
+  border-width: 0;
 }
 
 .input-img {
@@ -250,6 +259,8 @@ export default {
   height: 150px;
   word-break: break-all;
   resize: none;
+  border-radius: 10px;
+  border-width: 0;
 }
 
 .input-keyword {
@@ -260,5 +271,16 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#submit-bt {
+  width: 200px;
+  height: 60px;
+}
+
+.line {
+  width: 100%;
+  height: 10px;
+  background-color: teal;
 }
 </style>

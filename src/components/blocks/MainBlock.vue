@@ -10,17 +10,17 @@
         </div>
         <div class="support-wrap">
             <div class="support">
-                <ul class="support-list">
-                    <li class="small-title">
-                        <h3 class="sub-suptitle">이용자 지원</h3>
-                    </li>
-                    <li class="notice">
-                        공지사항
-                    </li>
-                    <li class="faq">
-                        자주하는 질문
-                    </li>
-                </ul>
+                <h3 class="sub-suptitle">이용자 지원</h3>
+                <div class="sup-menu">
+                    <ul class="support-list">
+                        <li class="notice">
+                            공지사항
+                        </li>
+                        <li class="faq">
+                            자주하는 질문
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="line">
@@ -84,10 +84,19 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 250px;
     width: 70%;
     border-radius: 50px;
     background-color: gray;
+}
+
+.sup-menu {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .support-list {
@@ -102,11 +111,6 @@ export default {
 .sub-title {
     justify-content: center;
     align-items: center;
-    margin-bottom: 0;
-}
-
-.small-title {
-    margin-right: 20%;
     margin-bottom: 0;
 }
 
