@@ -17,7 +17,7 @@
                             <router-link to="/faq"><li class="menu__item">상담사 등록하기</li></router-link>
                             <nav class="sub_menu">
                                 <router-link to="/login"><li class="menu__item">로그인</li></router-link>
-                                <router-link to="/signup"><li class="menu__item">회원가입</li></router-link>
+                                <router-link to="/contact"><li class="menu__item">회원가입</li></router-link>
                             </nav>
                         </nav>
                     </div>
