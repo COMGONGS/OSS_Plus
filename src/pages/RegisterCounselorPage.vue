@@ -48,14 +48,11 @@
             @click="execDaumPostcode()" 
             value=" 우편번호 찾기"><br>
             <input type="text" 
-            id="address" 
+            v-model="address"
             placeholder=" 주소"><br>
             <input type="text" 
-            id="detailAddress" 
+            v-model="extraAddress"
             placeholder=" 상세주소">
-            <input type="text" 
-            id="extraAddress" 
-            placeholder=" 참고항목">
           </div>
           <div class="input-intro">
             <textarea id="intro" 
