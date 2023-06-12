@@ -145,7 +145,7 @@ export default {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 40px 0 -10px;
+  margin: 0 -10px;
 }
 
 .profile-card {
