@@ -145,7 +145,6 @@ export default {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 0 -10px;
 }
 
 .profile-card {
@@ -156,10 +155,6 @@ export default {
 ul.list > li {
   position: relative;
   flex: 0 1 290px;
-  margin: 40px 10px 10px;
-  border: 1px solid #fff;
-  box-sizing: border-box;
-  transition: all 0.3s;
 }
 
 .ul.list figure {
