@@ -43,15 +43,19 @@
           <div class="input-address">
             <input type="text" 
             v-model="postcode" 
+            id="post-code"
             placeholder=" 우편번호">
             <input type="button" 
+            id="search-button"
             @click="execDaumPostcode()" 
             value=" 우편번호 찾기"><br>
             <input type="text" 
             v-model="address"
+            id="address-base"
             placeholder=" 주소"><br>
             <input type="text" 
             v-model="extraAddress"
+            id="address-detail"
             placeholder=" 상세주소">
           </div>
           <div class="input-intro">
@@ -163,7 +167,7 @@ export default {
 
 .maincontents {
   display: flex;
-  height: 1300px;
+  height: 1330px;
   justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -178,12 +182,12 @@ export default {
   margin-bottom: 100px;
   background-color: teal;
   width: 45%;
-  height: 1100px;
+  height: 1200px;
   border-radius: 50px;
 }
 
 .form-title {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .form-style {
@@ -191,7 +195,7 @@ export default {
 }
 
 .input-name {
-  margin-top: 40px;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -242,6 +246,35 @@ export default {
 
 .input-address {
   margin-top: 40px;
+}
+
+#post-code {
+  height: 60px;
+  border-radius: 10px;
+  border-width: 0;
+}
+
+#search-button {
+  margin-left: 10px;
+  height: 60px;
+  border-radius: 10px;
+  border-width: 0;
+}
+
+#address-base {
+  margin-top: 10px;
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  border-width: 0;
+}
+
+#address-detail {
+  margin-top: 10px;
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  border-width: 0;
 }
 
 .input-intro {
