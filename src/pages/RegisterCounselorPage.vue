@@ -181,7 +181,7 @@ export default {
   margin-top: 100px;
   margin-bottom: 100px;
   background-color: teal;
-  width: 45%;
+  width: 850px;
   height: 1200px;
   border-radius: 50px;
 }
@@ -309,6 +309,7 @@ export default {
 }
 
 .line {
+  margin-top: 70px;
   width: 100%;
   height: 10px;
   background-color: teal;

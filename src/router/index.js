@@ -6,6 +6,7 @@ import BoardCreate from "@/components/board/BoardCreate";
 import NotFound from "@/components/NotFound";
 import LoginTry from '@/pages/LoginPage.vue'
 import SignUp from '@/pages/SignUp.vue'
+import ForgotPassword from "@/pages/ForgotPassword.vue";
 
 
 
@@ -16,6 +17,11 @@ const routes = [
     path: '/',
     name: 'home',
     component: () => import(/* webpackChunkName: "about" */ '../pages/HomePage.vue')
+  },
+  {
+    path: '/ForgotPassword',
+    name: 'ForgotPassword',
+    component: () => import('../pages/ForgotPassword.vue')
   },
   {
     path: '/search',
@@ -82,6 +88,11 @@ const routes = [
     path: '/signup',
     name: 'SignUp',
     component: SignUp
+  },
+  {
+    path: '/ForgotPassword',
+    name: 'ForgotPassword',
+    component: ForgotPassword
   }
 ]
 
