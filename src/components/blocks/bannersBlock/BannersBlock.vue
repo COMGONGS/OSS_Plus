@@ -21,7 +21,7 @@ export default {
 <style lang="scss">
     .banners {
         display: flex;
-        background-color: teal;
+        background-color: #23C6A2;
 
         @media screen and (max-width: 992px) {
             flex-direction: column-reverse;
