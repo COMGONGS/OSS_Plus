@@ -38,6 +38,8 @@
     },
     methods: {
       signUp() {
+        const router = this.$router;
+        
         if (this.password !== this.confirmPassword) {
           alert('비밀번호가 일치하지 않습니다.');
           return;
@@ -45,7 +47,9 @@
 
         createUserWithEmailAndPassword(auth, this.email, this.password)
             .then(function(userCredential) {
-              alert('회원가입 완료! 사용자 정보: ' + JSON.stringify(userCredential.user.email))
+              
+              alert('회원가입 완료! 사용자 정보: ' + JSON.stringify(userCredential.user.email));
+              router.push('/login')
             })
             .catch(function(err) {
               alert('에러 : ' + err.message)

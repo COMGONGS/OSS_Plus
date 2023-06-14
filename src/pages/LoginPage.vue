@@ -40,6 +40,7 @@ export default {
             const user = userCredential.user;
             this.userEmail = user.email;
             alert('로그인 완료!');
+            this.$router.push('/')
           })
           .catch((err) => {
             alert('에러 : ' + err.message);
