@@ -6,6 +6,7 @@ import BoardCreate from "@/components/board/BoardCreate";
 import NotFound from "@/components/NotFound";
 import LoginTry from '@/pages/LoginPage.vue'
 import SignUp from '@/pages/SignUp.vue'
+import ForgotPassword from "@/pages/ForgotPassword.vue";
 
 
 
@@ -23,6 +24,11 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../pages/SearchPage.vue')
   },
   {
+    path: '/ForgotPassword',
+    name: 'ForgotPassword',
+    component: () => import('../pages/ForgotPassword.vue')
+  },
+  {
     path: '/beforecounsulting',
     name: 'beforecounsulting',
     // route level code-splitting
@@ -38,12 +44,12 @@ const routes = [
   {
     path: '/faq',
     name: 'faq',
-    component: () => import(/* webpackChunkName: "about" */ '../pages/FAQPage.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../pages/RegisterCounselorPage.vue')
   },
   {
-    path: '/contact',
-    name: 'contact',
-    component: () => import(/* webpackChunkName: "about" */ '../pages/ContactPage.vue')
+    path: '/signup',
+    name: 'signup',
+    component: () => import(/* webpackChunkName: "about" */ '../pages/SignUp.vue')
   },
   {
     path: '/login',
@@ -82,6 +88,11 @@ const routes = [
     path: '/signup',
     name: 'SignUp',
     component: SignUp
+  },
+  {
+    path: '/Forgotpassword',
+    name: 'ForgotPassword',
+    component: ForgotPassword
   }
 ]
 

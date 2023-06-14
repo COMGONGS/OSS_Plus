@@ -1,22 +1,29 @@
 <template>
   <div class="counsulting">
-    <BannerPage
-      title="Counsulting"
-    />
-  <b-table
-      striped
-      hover
-      :items="items"
-      :per-page="perPage"
-      :current-page="currentPage"
-      :fields="fields"
-      @row-clicked="rowClick"
-  ></b-table>
-  <b-pagination v-model="currentPage"
-                :total-rows="rows"
-                :per-page="perPage"
-                align="center"></b-pagination>
-  <b-button @click="writeContent">글쓰기</b-button>
+    <BannerPage title="Counsulting" />
+
+    <div class="table-container">
+      <b-table
+          striped
+          hover
+          :items="items"
+          :per-page="perPage"
+          :current-page="currentPage"
+          :fields="fields"
+          @row-clicked="rowClick"
+      ></b-table>
+
+      <b-pagination
+          v-model="currentPage"
+          :total-rows="rows"
+          :per-page="perPage"
+          align="center"
+      ></b-pagination>
+    </div>
+
+    <div class="button-container">
+      <b-button @click="writeContent">글쓰기</b-button>
+    </div>
   </div>
 </template>
 
@@ -31,7 +38,6 @@ export default {
     BannerPage
   },
   data() {
-    // 정렬 : https://blog.naver.com/haskim0716n/221681695401
     let contentItems = data.Content.sort((a, b) => {
       return b.content_id - a.content_id;
     }); // 내림차순
@@ -91,8 +97,24 @@ export default {
 }
 </script>
 
-<style lang='scss'>
-  .counsulting {
-    margin-top: 50px;
+<style lang="scss">
+.counsulting {
+  margin-top: 50px;
+
+  .table-container {
+    margin-top: 100px;
+
   }
+
+  .button-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 1800px;
+  }
+
+  .b-table tbody td {
+    background-color: #23C6A2; /* 원하는 배경색으로 변경 */
+  }
+
+}
 </style>
