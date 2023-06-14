@@ -47,8 +47,8 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../pages/CounsultingPage.vue')
   },
   {
-    path: '/faq',
-    name: 'faq',
+    path: '/registercounselor',
+    name: 'registercounselor',
     component: () => import(/* webpackChunkName: "about" */ '../pages/RegisterCounselorPage.vue')
   },
   {

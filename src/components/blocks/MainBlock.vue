@@ -51,7 +51,7 @@ export default {
 .slider-box {
     height: 800px;
     width: 100%;
-    background-color: gray;
+    background-color: #23C6A2;
 }
 
 .search-keyword {
@@ -60,7 +60,7 @@ export default {
     margin-top: 150px;
     height: 400px;
     width: 100%;
-    background-color: lightblue;
+    background-color: white;
 }
 
 .keyword-title {
@@ -88,7 +88,7 @@ export default {
     height: 250px;
     width: 70%;
     border-radius: 50px;
-    background-color: gray;
+    background-color: #23C6A2;
 }
 
 .sup-menu {
@@ -130,6 +130,6 @@ export default {
 .line {
     width: 100%;
     height: 10px;
-    background-color: teal;
+    background-color: #23C6A2;
 }
 </style>

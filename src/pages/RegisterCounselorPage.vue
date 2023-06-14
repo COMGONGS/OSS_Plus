@@ -20,7 +20,7 @@
             placeholder=" 만 나이">
           </div>
           <div class="input-gender">
-            <p id="gender-tile">성별</p>
+            <p id="gender-title">성별</p>
             <input name="gender" 
             id="female" 
             type="radio">여성
@@ -180,7 +180,7 @@ export default {
   align-items: center;
   margin-top: 100px;
   margin-bottom: 100px;
-  background-color: teal;
+  background-color: #23C6A2;
   width: 850px;
   height: 1200px;
   border-radius: 50px;
@@ -227,6 +227,18 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#gendr-title {
+  
+}
+
+#female {
+
+}
+
+#male {
+
 }
 
 .input-no {
@@ -312,6 +324,6 @@ export default {
   margin-top: 70px;
   width: 100%;
   height: 10px;
-  background-color: teal;
+  background-color: #23C6A2;
 }
 </style>

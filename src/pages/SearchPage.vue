@@ -149,7 +149,7 @@ export default {
 .list {
   margin-top: 10px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
@@ -180,8 +180,8 @@ ul.list > li {
 }
 
 ul.list figure img {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   object-fit: cover;
   object-position: center 5%;
 }

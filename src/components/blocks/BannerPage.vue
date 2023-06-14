@@ -58,7 +58,7 @@
           align-items: center;
           width: 100%;
           min-height: 350px;
-          background-color: teal;
+          background-color: #23C6A2;
           z-index: 1;
   
   
