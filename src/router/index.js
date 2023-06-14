@@ -19,6 +19,11 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../pages/HomePage.vue')
   },
   {
+    path: '/ForgotPassword',
+    name: 'ForgotPassword',
+    component: () => import('../pages/ForgotPassword.vue')
+  },
+  {
     path: '/search',
     name: 'search',
     component: () => import(/* webpackChunkName: "about" */ '../pages/SearchPage.vue')
@@ -90,7 +95,7 @@ const routes = [
     component: SignUp
   },
   {
-    path: '/Forgotpassword',
+    path: '/ForgotPassword',
     name: 'ForgotPassword',
     component: ForgotPassword
   }

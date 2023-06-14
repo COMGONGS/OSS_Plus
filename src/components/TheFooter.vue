@@ -5,10 +5,9 @@
                 <div class="footer__copyright">
                     Built by <a href="">Flowbase</a>· Powered by <a href="">Webflow</a>
                 </div>
-                <div class="footer__socials">
-                    <div class="footer__social _instagram"></div>
-                    <div class="footer__social _twitter"></div>
-                    <div class="footer__social _youtube"></div>
+                <div class="footer__socials" 
+                onclick="window.open('https://github.com/COMGONGS/OSS_Plus')">
+                    <div class="footer__social _github"></div>
                 </div>
             </div>
 </app-container>
@@ -99,7 +98,7 @@ export default {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: 60px;
+            margin-top: 10px;
             padding-bottom: 70px;
         }
 
@@ -127,46 +126,16 @@ export default {
             cursor: pointer;
 
 
-            &._instagram::before {
+            &._github::before {
                 content: '';
                 position: absolute;
                 top: 26%;
                 left: 28%;
-                width: 18px;
-                height: 18px;
-                background: url("./../assets/images/instagram.svg");
+                width: 20px;
+                height: 20px;
+                background: url("./../assets/images/github-mark.png");
                 background-repeat: no-repeat;
                 background-size: cover;
-            }
-
-            &._twitter::before {
-                content: '';
-                position: absolute;
-                top: 26%;
-                left: 28%;
-                width: 18px;
-                height: 15px;
-                background: url("./../assets/images/twitter.svg");
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-
-            &._youtube::before {
-                content: '';
-                position: absolute;
-                top: 30%;
-                left: 28%;
-                width: 18px;
-                height: 13px;
-                background: url("./../assets/images/youtube.svg");
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-
-            &._instagram::before:hover,
-            &._twitter::before:hover,
-            &._youtube::before:hover {
-                transform: scale(1.4);
             }
         }
 

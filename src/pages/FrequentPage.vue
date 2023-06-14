@@ -35,7 +35,7 @@
 import BannerPage from "@/components/blocks/BannerPage.vue";
 
 export default {
-  name: 'FAQPage',
+  name: 'RegisterCounselorPage',
 
   components: {
     BannerPage

@@ -17,7 +17,7 @@
                             <router-link to="/faq"><li class="menu__item">상담사 등록하기</li></router-link>
                             <nav class="sub_menu">
                                 <router-link to="/login"><li class="menu__item">로그인</li></router-link>
-                                <router-link to="/signUp"><li class="menu__item">회원가입</li></router-link>
+                                <router-link to="/signup"><li class="menu__item">회원가입</li></router-link>
                             </nav>
                         </nav>
                     </div>
@@ -72,10 +72,12 @@ export default {
         justify-content: space-between;
         align-items: center;
         height: 120px;
+        width: 70%;
 
         &__logo {
-            width: 40px;
+            width: 50px;
             height: 50px;
+            margin-right: 50px;
             background: url("./../assets/images/logo.png");
             background-repeat: no-repeat;
             background-size: cover;
