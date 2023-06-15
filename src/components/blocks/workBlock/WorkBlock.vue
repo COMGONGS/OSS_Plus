@@ -9,7 +9,7 @@
     <div class="main_contents">
         <div class="SearchBox">
             <input type="text"
-placeholder="검색어 입력">
+            placeholder="검색어 입력">
         </div>
     </div>
 </template>
@@ -36,7 +36,6 @@ export default {
 .main_contents {
     width: auto;
     height: 473px;
-    background-color: skyblue;
 }
 
 .SearchBox {

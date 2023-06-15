@@ -3,11 +3,6 @@
         <div class="slider-box">
             냠
         </div>
-        <div class="search-keyword">
-            <div class="keyword-title">
-                <h2 class="sub-keytitle">키워드로 찾기</h2>
-            </div>
-        </div>
         <div class="support-wrap">
             <div class="support">
                 <h3 class="sub-suptitle">이용자 지원</h3>
@@ -53,20 +48,6 @@ export default {
     width: 100%;
     background-color: #23C6A2;
 }
-
-.search-keyword {
-    display: flex;
-    justify-content: center;
-    margin-top: 150px;
-    height: 400px;
-    width: 100%;
-    background-color: white;
-}
-
-.keyword-title {
-    margin-bottom: 0;
-}
-
 
 .sub-keytitle {
     margin-top: 40px;

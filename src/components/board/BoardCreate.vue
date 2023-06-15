@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="board-container">
     <div class="input-container">
       <b-input v-model="subject"
                placeholder="제목을 입력해주세요."></b-input>
@@ -79,7 +79,7 @@ export default {
 </script>
 
 <style>
-.container {
+.board-container {
   margin-top: 80px;
 }
 
