@@ -1,6 +1,11 @@
 export default {
     User: [
         {
+            user_id: 0,
+            name: "admin",
+            created_at: "2023-06-16"
+        },
+        {
             user_id: 1,
             name: "인성",
             created_at: "2018-09-11"
