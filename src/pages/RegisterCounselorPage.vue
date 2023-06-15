@@ -10,7 +10,8 @@
         <form action=""
         class="form-style">
           <div class="input-name">
-            <input id="name" 
+            <input id="username" 
+            v-model="username"
             type="text" 
             placeholder=" 이름">
           </div>
@@ -32,6 +33,10 @@
             <input id="no" 
             type="text"
             placeholder=" 자격증 발급 번호">
+            <input type="button" 
+            id="no-button"
+            @click="matchNo()" 
+            value=" 자격 확인하기"><br>
           </div>
           <div class="input-img">
             <label for="profile-img">
@@ -64,31 +69,12 @@
             placeholder=" 자기소개 작성">
             </textarea>
           </div>
-          <div class="input-keyword">
-            <label for="keyword">
-              <p>키워드 선택</p>
-            </label>
-            <input id="keyword1" 
-            type="checkbox">
-            <label for="keyword1">
-              <p>우울증</p>
-            </label>
-            <input id="keyword2" 
-            type="checkbox">
-            <label for="keyword2  ">
-              <p>트라우마</p>
-            </label>
-            <input id="keyword3" 
-            type="checkbox">
-            <label for="keyword3">
-              <p>조울증</p>
-            </label>
-          </div>
           <br>
           <div class="submit-button">
             <input id="submit-bt"
             type="submit" 
-            value="등록하기">
+            value="등록하기"
+            @click="save">
           </div>
         </form>
       </div>
@@ -100,22 +86,43 @@
 
 <script>
 import BannerPage from "@/components/blocks/BannerPage.vue";
+import { initializeApp } from "firebase/app";
+  import firebaseConfig from "../plugin/firebaseConfig";
+import '../plugin/firebase'
+import { getFirestore,collection } from "@firebase/firestore";
+import axios from "axios";
 
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
 export default {
-  name: 'RegisterCounselorPage"',
+  name: 'RegisterCounselorPage',
 
   components: {
     BannerPage
   },
 
   data() {
-    return {
-      postcode: "",
-      address: "",
-      extraAddress: "",
-    }
-  },
-  methods: {
+      return {
+        username: "test name",
+        postcode: "",
+        address: "",
+        extraAddress: "",
+      }
+    },
+    methods: {
+        save(){
+            collection(db, "userdata")
+            .add({
+                username: this.username,
+            })
+            .then(function() {
+                console.log("saved!")
+            })
+            .catch(function(error){
+                console.error("Error writing document: ", error);
+            });
+        },
     execDaumPostcode() {
       new window.daum.Postcode({
         oncomplete: (data) => {
@@ -155,6 +162,23 @@ export default {
           this.postcode = data.zonecode;
         },
       }).open();
+    },
+    matchNo () {
+      axios.defaults.withCredentials=true;
+      axios.get('/api/v1/cq/certificate/check?apiKey={value}&name={value}&no={value}',{
+        headers:{
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Credentials': 'true'
+        }
+      }).then((res)=>{
+        console.log(res);
+       })
+       .catch((error)=>{
+        console.log("error",error)
+       })
+
+       
+      
     },
   },
 }
@@ -201,7 +225,7 @@ export default {
   align-items: center;
 }
 
-#name {
+#username {
   width: 100%;
   height: 60px;
   border-radius: 10px;
@@ -242,12 +266,18 @@ export default {
 }
 
 .input-no {
-
+  display: flex;
 }
 
 #no {
   width: 100%;
   height: 60px;
+  border-radius: 10px;
+  border-width: 0;
+}
+
+#no-button {
+  margin-left: 20px;
   border-radius: 10px;
   border-width: 0;
 }
@@ -305,10 +335,6 @@ export default {
   border-width: 0;
 }
 
-.input-keyword {
-  margin-top: 40px;
-}
-
 .submit-button {
   display: flex;
   justify-content: center;
@@ -316,6 +342,8 @@ export default {
 }
 
 #submit-bt {
+  border-radius: 10px;
+  border-width: 0;
   width: 200px;
   height: 60px;
 }
