@@ -9,7 +9,11 @@
             <nav class="menu">
               <router-link to="/search"><li class="menu__item">상담사 찾기</li></router-link>
               <router-link to="/counsulting"><li class="menu__item">상담하기</li></router-link>
-              <router-link to="/beforecounsulting"><li class="menu__item">상담하기 전에</li></router-link>
+              <li class="menu__item">
+                <a class="link"
+                   href="https://nct.go.kr/distMental/rating/rating02_2.do"
+                   target="_blank">상담하기 전에</a>
+              </li>
               <router-link to="/registercounselor"><li class="menu__item">상담사 등록하기</li></router-link>
               <nav class="sub_menu">
                 <router-link v-if="isLoggedIn"
@@ -66,6 +70,11 @@ export default {
 </script>
 
 <style lang="scss">
+.link {
+  color: black;
+  text-decoration: none;
+}
+
 .TheHeader {
   position: sticky;
   top: 0;
