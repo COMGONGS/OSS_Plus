@@ -17,9 +17,12 @@
   
               </p>
               <!--dl의 경우 세부 설명을 list 형태로 나열하기 위해 들고옴 그냥 p로 바꿔도 괜춘할듯-->
+              <div class="counselor-name">
+                <h3>AAA</h3>
+              </div>
               <dl class="location">
-                <dt>제주지역상담센터</dt>
-                <dd>제주시 아라동 xx길</dd>
+                <dt>제주시 정신건강복지센터</dt>
+                <dd>제주특별자치도 제주시 노형9길 9-4 2F</dd>
                 <dd>064-xxx-xxxx</dd>
               </dl>
               <p class="detail">자세히</p>
@@ -36,7 +39,9 @@
               <p class="intro">
   
               </p>
-              <!--dl의 경우 세부 설명을 list 형태로 나열하기 위해 들고옴 그냥 p로 바꿔도 괜춘할듯-->
+              <div class="counselor-name">
+                <h3>BBB</h3>
+              </div>
               <dl class="location">
                 <dt>제주지역상담센터</dt>
                 <dd>제주시 아라동 xx길</dd>
@@ -57,7 +62,9 @@
               <p class="intro">
   
               </p>
-              <!--dl의 경우 세부 설명을 list 형태로 나열하기 위해 들고옴 그냥 p로 바꿔도 괜춘할듯-->
+              <div class="counselor-name">
+                <h3>CCC</h3>
+              </div>
               <dl class="location">
                 <dt>제주지역상담센터</dt>
                 <dd>제주시 아라동 xx길</dd>
@@ -78,7 +85,9 @@
               <p class="intro">
   
               </p>
-              <!--dl의 경우 세부 설명을 list 형태로 나열하기 위해 들고옴 그냥 p로 바꿔도 괜춘할듯-->
+              <div class="counselor-name">
+                <h3>DDD</h3>
+              </div>
               <dl class="location">
                 <dt>제주지역상담센터</dt>
                 <dd>제주시 아라동 xx길</dd>
@@ -99,7 +108,126 @@
               <p class="intro">
   
               </p>
+              <div class="counselor-name">
+                <h3>EEE</h3>
+              </div>
+              <dl class="location">
+                <dt>제주지역상담센터</dt>
+                <dd>제주시 아라동 xx길</dd>
+                <dd>064-xxx-xxxx</dd>
+              </dl>
+              <p class="detail">자세히</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="list">
+          <li class="profile-card">
+            <a>
+              <figure>
+                <img alt="XX 사진" 
+                src="https://ifh.cc/g/pWHtCo.png">
+              </figure>
+              <p class="name">
+  
+              </p>
+              <p class="intro">
+  
+              </p>
               <!--dl의 경우 세부 설명을 list 형태로 나열하기 위해 들고옴 그냥 p로 바꿔도 괜춘할듯-->
+              <div class="counselor-name">
+                <h3>AAA</h3>
+              </div>
+              <dl class="location">
+                <dt>제주시 정신건강복지센터</dt>
+                <dd>제주특별자치도 제주시 노형9길 9-4 2F</dd>
+                <dd>064-xxx-xxxx</dd>
+              </dl>
+              <p class="detail">자세히</p>
+            </a>
+          </li><li class="profile-card">
+            <a>
+              <figure>
+                <img alt="XX 사진" 
+                src="https://ifh.cc/g/pWHtCo.png">
+              </figure>
+              <p class="name">
+  
+              </p>
+              <p class="intro">
+  
+              </p>
+              <div class="counselor-name">
+                <h3>BBB</h3>
+              </div>
+              <dl class="location">
+                <dt>제주지역상담센터</dt>
+                <dd>제주시 아라동 xx길</dd>
+                <dd>064-xxx-xxxx</dd>
+              </dl>
+              <p class="detail">자세히</p>
+            </a>
+          </li>
+          <li class="profile-card">
+            <a>
+              <figure>
+                <img alt="XX 사진" 
+                src="https://ifh.cc/g/pWHtCo.png">
+              </figure>
+              <p class="name">
+  
+              </p>
+              <p class="intro">
+  
+              </p>
+              <div class="counselor-name">
+                <h3>CCC</h3>
+              </div>
+              <dl class="location">
+                <dt>제주지역상담센터</dt>
+                <dd>제주시 아라동 xx길</dd>
+                <dd>064-xxx-xxxx</dd>
+              </dl>
+              <p class="detail">자세히</p>
+            </a>
+          </li>
+          <li class="profile-card">
+            <a>
+              <figure>
+                <img alt="XX 사진" 
+                src="https://ifh.cc/g/pWHtCo.png">
+              </figure>
+              <p class="name">
+  
+              </p>
+              <p class="intro">
+  
+              </p>
+              <div class="counselor-name">
+                <h3>DDD</h3>
+              </div>
+              <dl class="location">
+                <dt>제주지역상담센터</dt>
+                <dd>제주시 아라동 xx길</dd>
+                <dd>064-xxx-xxxx</dd>
+              </dl>
+              <p class="detail">자세히</p>
+            </a>
+          </li>
+          <li class="profile-card">
+            <a>
+              <figure>
+                <img alt="XX 사진" 
+                src="https://ifh.cc/g/pWHtCo.png">
+              </figure>
+              <p class="name">
+  
+              </p>
+              <p class="intro">
+  
+              </p>
+              <div class="counselor-name">
+                <h3>EEE</h3>
+              </div>
               <dl class="location">
                 <dt>제주지역상담센터</dt>
                 <dd>제주시 아라동 xx길</dd>
@@ -139,6 +267,7 @@ export default {
 }
 
 .listcontainer {
+  flex-direction: column;
   display: flex;
 }
 
@@ -149,7 +278,7 @@ export default {
 .list {
   margin-top: 10px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -161,6 +290,7 @@ export default {
 ul.list > li {
   position: relative;
   flex: 0 1 290px;
+  margin-right: 46px;
 }
 
 .ul.list figure {
