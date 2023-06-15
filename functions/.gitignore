@@ -1,2 +1,7 @@
 node_modules/
+<<<<<<< HEAD
 key.json
+=======
+key.json
+firebase-debug.log
+>>>>>>> 27fe666cbdcc9f66c676050bb01c48925a68121c

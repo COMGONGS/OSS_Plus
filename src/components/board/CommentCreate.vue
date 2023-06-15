@@ -21,7 +21,9 @@
 
 <script>
 import data from "@/data";
-
+import firebase from "firebase/app";
+import "firebase/auth";
+import firebaseConfig from "@/plugin/firebaseConfig";
 export default {
   name: "CommentCreate",
   props: {
@@ -34,19 +36,32 @@ export default {
   },
   data() {
     return {
-      name: "인성",
+      userEmail: "",
       context: ""
     };
+  },
+  created() {
+    // Firebase 초기화
+    firebase.initializeApp({
+      firebaseConfig
+    });
+
+    // 현재 로그인한 사용자의 이메일 가져오기
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        this.userEmail = user.email; // 사용자 이메일을 userEmail 변수에 할당
+      }
+    });
   },
   methods: {
     createComment() {
       const comment_id = data.Comment[data.Comment.length - 1].comment_id + 1;
       data.Comment.push({
         comment_id: comment_id,
-        user_id: 1,
+        user_id: 0,
         content_id: this.contentId,
         context: this.context,
-        created_at: "2019-04-19",
+        created_at: new Date(),
         updated_at: null
       });
       this.reloadComment();
@@ -59,9 +74,9 @@ export default {
       data.SubComment.push({
         subcomment_id: subcomment_id,
         comment_id: this.commentId,
-        user_id: 1,
+        user_id: 0,
         context: this.context,
-        created_at: "2019-04-20",
+        created_at: new Date(),
         updated_at: null
       });
       this.reloadSubComments();
