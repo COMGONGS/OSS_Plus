@@ -70,8 +70,10 @@ export default {
   }
 };
 </script>
+
 <style scoped>
 .content-detail-content-info {
+  margin-top: 70px;
   border: 1px solid black;
   display: flex;
   justify-content: space-between;
