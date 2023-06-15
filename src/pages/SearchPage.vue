@@ -1,7 +1,8 @@
 <template>
   <div class="search">
-    <BannerPage title="Search" />
-    <div class="maincontents">
+    <BannerPage title="상담사 찾기" />
+    <WorkBlock />
+    <div class="maincontents-box">
       <div class="listcontainer">
         <ul class="list">
           <li class="profile-card">
@@ -244,12 +245,14 @@
 
 <script>
 import BannerPage from "@/components/blocks/BannerPage.vue";
+import WorkBlock from '@/components/blocks/workBlock/WorkBlock.vue';
 
 export default {
   name: 'SearchPage',
 
   components: {
-    BannerPage
+    BannerPage,
+    WorkBlock,
   }
 }
 </script>
@@ -257,11 +260,13 @@ export default {
 <style lang='scss'>
 .search {
   margin-top: 50px;
+  width: 100%;
 }
 
-.maincontents {
+.maincontents-box {
+  margin-top: -100px;
+  width: 100%;
   height: auto;
-  background-color: gray;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -307,11 +312,16 @@ ul.list > li {
 
 .figure {
   line-height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 ul.list figure img {
   width: 80%;
   height: 80%;
+  align-items: center;
+  justify-content: center;
   object-fit: cover;
   object-position: center 5%;
 }
@@ -322,5 +332,7 @@ ul.list figure img {
   border: 0;
   overflow-clip-margin: content-box;
   overflow: clip;
+  align-items: center;
+  justify-content: center;
 }
 </style>

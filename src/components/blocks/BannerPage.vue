@@ -61,24 +61,6 @@
           background-color: #23C6A2;
           z-index: 1;
   
-  
-          &__img {
-              position: absolute;
-              left: auto;
-              top: auto;
-              right: auto;
-              bottom: auto;
-              width: 100%;
-              height: 100%;
-              max-width: 500px;
-              background: url("./../../assets/images/bg-text-about-us.png");
-              background-repeat: no-repeat;
-              background-size: cover;
-              opacity: 0;
-              z-index: -1;
-              transition: all .5s linear;
-          }
-  
           &__title {
               opacity: 0;
               transform: translateY(100px);

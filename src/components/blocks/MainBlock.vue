@@ -1,7 +1,6 @@
 <template>
     <div class="main-block">
         <div class="slider-box">
-            냠
         </div>
         <div class="support-wrap">
             <div class="support">

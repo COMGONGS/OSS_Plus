@@ -34,7 +34,7 @@ export default {
 
 <style lang="scss">
 .main_contents {
-    width: auto;
+    width: 100%;
     height: 473px;
 }
 

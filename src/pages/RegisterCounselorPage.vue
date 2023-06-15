@@ -22,12 +22,18 @@
           </div>
           <div class="input-gender">
             <p id="gender-title">성별</p>
-            <input name="gender" 
-            id="female" 
-            type="radio">여성
-            <input name="gender" 
-            id="male" 
-            type="radio">남성
+            <label>
+              <input name="gender" 
+              id="female" 
+              type="radio">
+              <span>여성</span>
+            </label>
+            <label>
+              <input name="gender" 
+              id="male" 
+              type="radio">
+              <span>남성</span>
+            </label>
           </div>
           <div class="input-no">
             <input id="no" 
@@ -40,7 +46,7 @@
           </div>
           <div class="input-img">
             <label for="profile-img">
-              <p>프로필 사진 등록</p>
+              <span>프로필 사진 등록</span>
             </label>
             <input id="profile-img" 
             type="file">
@@ -104,7 +110,7 @@ export default {
 
   data() {
       return {
-        username: "test name",
+        username: "",
         postcode: "",
         address: "",
         extraAddress: "",
@@ -247,22 +253,30 @@ export default {
 }
 
 .input-gender {
+  margin-bottom: 15px;
   margin-top: 40px;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-#gendr-title {
-  
+#gender-title {
+  font-size: 20px;
+  flex-grow: 2;
 }
 
 #female {
-
+  
 }
 
 #male {
 
+}
+
+label {
+  flex-grow: 1;
+}
+
+span {
+  font-size: 20px;
 }
 
 .input-no {

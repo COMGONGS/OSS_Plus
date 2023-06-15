@@ -1,16 +1,15 @@
 <template>
     <div class="footer">
         <app-container>
-            <div class="footer__legal">
-                <div class="footer__copyright">
-                    Built by <a href="">Flowbase</a>· Powered by <a href="">Webflow</a>
-                </div>
-                <div class="footer__socials" 
+            <div class="footer__info">
+                <h5>제주대학교 컴퓨터공학전공 Team.Phytoncide</h5>
+                <h5>멤버 : 정진아(팀장), 권혁준, 이지현</h5>
+                <div class="footer__socials"
                 onclick="window.open('https://github.com/COMGONGS/OSS_Plus')">
                     <div class="footer__social _github"></div>
                 </div>
             </div>
-</app-container>
+        </app-container>
     </div>
 </template>
 
@@ -23,158 +22,58 @@ export default {
         AppContainer
     },
 
-    data() {
-        return {
-            category: [
-                {
-                    name: 'company',
-                    links: [
-                        {
-                            name: 'Home',
-                            url: ''
-                        },
-                        {
-                            name: 'Order',
-                            url: ''
-                        },
-                        {
-                            name: 'FAQ',
-                            url: ''
-                        },
-                        {
-                            name: 'Contact',
-                            url: ''
-                        }
-                    ]
-                },
-                {
-                    name: 'TEMPLATE',
-                    links: [
-                        {
-                            name: 'Style Guide',
-                            url: ''
-                        },
-                        {
-                            name: 'Changelog',
-                            url: ''
-                        },
-                        {
-                            name: 'Licence',
-                            url: ''
-                        },
-                        {
-                            name: 'Webflow University',
-                            url: ''
-                        }
-                    ]
-                },
-                {
-                    name: 'FLOWBASE',
-                    links: [
-                        {
-                            name: 'More Cloneables',
-                            url: ''
-                        },
-                    ]
-                }
-            ]
-        }
-    }
+
 }
 </script>
 
 <style lang="scss">
-    .footer {
-        background: url("./../assets/images/bg-footer.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding-top: 100px;
+.footer {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
 
-        @media screen and (max-width: 576px) {
-           padding-top: 60px;
-        }
-
-        &__legal {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 10px;
-            padding-bottom: 70px;
-        }
-
-        &__copyright {
-            font-size: 15px;
-            line-height: 20px;
-            color: #353448;
-
-            & a {
-                color: #35B8BE;
-                text-decoration: none;
-            }
-        }
-
-        &__socials {
-            display: flex;
-        }
-
-        &__social {
-            position: relative;
-            width: 40px;
-            height: 40px;
-            border: 1px solid rgba(126, 130, 143, 0.3);
-            border-radius: 100px;
-            cursor: pointer;
-
-
-            &._github::before {
-                content: '';
-                position: absolute;
-                top: 26%;
-                left: 28%;
-                width: 20px;
-                height: 20px;
-                background: url("./../assets/images/github-mark.png");
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-        }
-
-        &__social:not(:last-child) {
-            margin-right: 24px;
-        }
-
-
+    @media screen and (max-width: 576px) {
+        padding-top: 60px;
     }
 
-    .category {
+    &__info {
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        padding-bottom: 70px;
+    }
 
-        &__title {
-            font-weight: 600;
-            font-size: 13px;
-            line-height: 20px;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            color: #08090A;
-            margin-bottom: 28px;
-        }
+    &__socials {
+        display: flex;
+    }
 
-        &__link {
-            margin-bottom: 28px;
-            
-            & a {
-                font-size: 16px;
-                line-height: 20px;
-                text-decoration: none;
-                color: #546285;
+    &__social {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border: 1px solid rgba(126, 130, 143, 0.3);
+        border-radius: 100px;
+        cursor: pointer;
 
-                & a:hover {
-                    color: #08090A;
-                }
-            }
 
-            
+        &._github::before {
+            content: '';
+            position: absolute;
+            top: 26%;
+            left: 28%;
+            width: 20px;
+            height: 20px;
+            background: url("./../assets/images/github-mark.png");
+            background-repeat: no-repeat;
+            background-size: cover;
         }
     }
+
+    &__social:not(:last-child) {
+        margin-right: 24px;
+    }
+
+
+}
 </style>
