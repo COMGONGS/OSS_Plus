@@ -239,6 +239,8 @@
           </li>
         </ul>
       </div>
+      <div class="line">
+      </div>
     </div>
   </div>
 </template>
@@ -264,7 +266,7 @@ export default {
 }
 
 .maincontents-box {
-  margin-top: -100px;
+  margin-top: -20px;
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
@@ -334,5 +336,12 @@ ul.list figure img {
   overflow: clip;
   align-items: center;
   justify-content: center;
+}
+
+.line {
+  margin-top: 70px;
+  width: 100%;
+  height: 10px;
+  background-color: #23C6A2;
 }
 </style>
