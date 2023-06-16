@@ -191,12 +191,12 @@ export default {
   }
 
 figure img {
-width: 80%;
-  height: 80%;
-  align-items: center;
-  justify-content: center;
-  object-fit: cover;
-  object-position: center 5%;
+    width: 80%;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    object-position: center 5%;
 }
 
 .img {

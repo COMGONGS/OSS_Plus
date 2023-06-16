@@ -3,7 +3,16 @@
   @scroll="onScroll()">
     <div class="banner">
       <div class="banner-text">
-        <h3 class="context">대충 이곳에 글 적어놓으면 되는디</h3>
+        <p class="context">
+          상담이 필요한 현대인<br>
+          무엇부터 해야할지 모를 때<br>
+          무엇이 당신을 도울 수 있는지<br>
+          당신의 불편을 해결하는데 도움을 드리겠습니다.
+        </p>
+        <button class="explainbutton"
+        @click="explain()">
+          자세히보기
+        </button>
       </div>
     </div>
     <WorkBlock />
@@ -42,7 +51,37 @@ export default {
   z-index: 1;
 }
 
+.banner-text {
+  display: flex;
+}
+
 .context {
+  margin-left: -120px;
+  margin-top: 60px;
   color: dark;
+  font-size: 30px;
+  font-weight: 2000;
+}
+
+.explainbutton {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  margin-top: 200px;
+  margin-left: 20px;
+  height: 40px;
+  
+  border: none;
+  border-radius: 5px;
+  
+  display: inline-block;
+  width: auto;
+  
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  
+  cursor: pointer;
+  
+
 }
 </style>
